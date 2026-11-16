@@ -1,6 +1,5 @@
-## 안녕하세요, **Kim Subin**입니다.
-
-공개 데이터와 LLM으로 실제 문제를 푸는 프로젝트를 만듭니다. 국내 경제 뉴스를 요약해 산업 테마로 묶는 **Stocker**, 버스 정류장의 대기 인원을 공개 데이터로 추정하는 **Station Cast**를 팀으로 만들었고, Claude Code의 "다 했어요"를 검증하는 플러그인 **harness**(AH_)를 만들고 있습니다.
+## ~~
+~~
 
 [![Gmail Badge](https://img.shields.io/badge/-coolcool1210@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:coolcool1210@gmail.com)](mailto:coolcool1210@gmail.com)
 
