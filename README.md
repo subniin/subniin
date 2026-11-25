@@ -1,104 +1,83 @@
-# 김수빈 (subniin)
+<h1 align="center">김수빈</h1>
 
-모델이나 코드가 맞다고 보고해도, **테스트와 기록으로 다시 확인하는** 개발자입니다. 확인하지 못한 것은 확인하지 못했다고 적습니다.
+<p align="center">
+  테스트와 기록으로 <b>다시 확인하는</b> 개발자<br>
+  동국대학교 컴퓨터·AI학부
+</p>
 
-동국대학교 컴퓨터·AI학부 · [coolcool1210@gmail.com](mailto:coolcool1210@gmail.com)
-
-## 기술
-
-| 구분 | 내용 |
-|---|---|
-| 언어 | Python, C/C++, Java, TypeScript, Shell |
-| 임베디드 | STM32, ESP32, nRF52 (BLE), UWB, MAVLink |
-| 시뮬레이션 | ArduPilot (ArduCopter, SITL), Gazebo |
-| AI | Claude Code, Kiro, LLM API, MCP |
-| 개발 | Git/GitHub, Node.js, FastAPI, Android, pytest, Vitest |
+<p align="center">
+  <a href="mailto:coolcool1210@gmail.com"><img src="https://img.shields.io/badge/-coolcool1210@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white" /></a>
+</p>
 
 ---
 
-## 프로젝트
+## Tech
 
-### 다수 드론 충돌 회피·편대 유지 경량 제어 (종합설계, 팀 멀티버스)
-
-[Multi-Bus/capstone_design](https://github.com/Multi-Bus/capstone_design) · [Multi-Bus/drone-hw-bench](https://github.com/Multi-Bus/drone-hw-bench) · 2026.09 ~ (12월 제출 예정)
-
-**개요.** 물류센터를 15 m × 15 m 실내로 줄여, 드론 6대가 랜덤 목표점으로 충돌 없이 이동하는 것이 목표입니다. 비싼 센서 없이 UWB, ToF, BLE만으로 위치 추정, 이웃 공유, 충돌 회피를 구현하고 연산량과 통신량을 줄입니다.
-
-**구성.** 노트북(지상국) ↔ BLE ↔ XIAO nRF52840 ↔ NUCLEO-N657(STM32N6) ↔ MAVLink ↔ FC(ArduCopter). 위치는 UWB 앵커 3개, 높이·속도·자세는 거리센서, 광류 센서, FC의 EKF가 맡습니다. 알고리즘은 A*, consensus 편대 제어, CBF-QP이며 N6에 올리도록 C99로 포팅합니다.
-
-**맡은 일.** 시뮬레이션 환경(Gazebo + SITL), 기체 조립과 FC 파라미터 관리, 호버링 시험, 지상 도구, 알고리즘 구현과 C 포팅, UWB 프로토콜과 앵커 펌웨어, BLE 링크 실측, 대시보드, 문서. UWB 거리 측정과 보정은 팀원과 함께 했습니다.
-
-**진행 현황 (2026-11-25).**
-
-| 영역 | 상태 |
-|---|---|
-| 설계와 문서 | 시스템 구조, 부품, 알고리즘 선정, 실험 설계 정리 완료 |
-| 시뮬레이션 | Gazebo + SITL 구축, 2대 스침 시험 완료 |
-| 하드웨어 벤치 | UWB, N6, BLE 링크 측정 완료 |
-| 기체 | 4호기 저고도 호버 확인, 나머지 기체 점검 중 |
-| 지상 도구 | 이륙, 호버, 회전, 링크 단절 시 착륙, 최대 4대 동시 연결 |
-| 알고리즘 | 파이썬 baseline과 C99 포팅 완료. N6 시간 측정은 빌드까지 했고 보드 측정은 아직 |
-
-앞으로: UWB 위치를 FC에 넣은 비행, 2대 충돌 회피 비행. 여러 대 비행과 충돌 회피 비행은 아직 하지 못했습니다.
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=Python&logoColor=white" />
+  <img src="https://img.shields.io/badge/C%2FC%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=TypeScript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=FastAPI&logoColor=white" />
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white" />
+  <img src="https://img.shields.io/badge/STM32-03234B?style=flat-square&logo=stmicroelectronics&logoColor=white" />
+  <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white" />
+  <img src="https://img.shields.io/badge/ArduPilot-1F6FEB?style=flat-square" />
+  <img src="https://img.shields.io/badge/Gazebo-FF6600?style=flat-square" />
+  <img src="https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=anthropic&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kiro-8A4FFF?style=flat-square" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white" />
+</p>
 
 ---
 
-### 구조대원 복귀 안내 장치 (Come Back Home)
+## Projects
 
-[subniin/come-back-home](https://github.com/subniin/come-back-home) · 5인 팀 · 2026.09 ~ 2027.01
-
-**개요.** 시야가 확보되지 않는 재난 현장에서 구조대원이 들어온 길로 돌아가도록, 허리에 단 진동 모터 8개(45° 간격)로 방향을 알려 주는 장치입니다. 폰이 센서와 GPS를 읽어 ESP32에 BLE로 보내면, ESP32가 걸음 검출, 경로 기록, 되돌아가기 계산을 하고 모터를 구동합니다.
-
-**맡은 일.** 안드로이드 앱(센싱 앱과 대시보드 앱), 펌웨어의 BLE 연결·스위치 4개·모터 핀, 걸음 헤딩 보정.
-
-**진행 현황.** 앱과 펌웨어의 BLE 연결, 실내 약 3 m 구간 경로 기록과 복귀 진동 시험(모터 4개)을 마쳤고, 모터 8개 배선과 스위치 입력을 반영했습니다. 복귀 알고리즘 수정과 헤딩 보정은 검토 중이고, 시나리오를 정한 재시험과 실제 보행 시험은 아직입니다.
-
----
-
-### Tokk: Kiro로 만든 소리 이벤트 엔진
-
-[subniin/tokk](https://github.com/subniin/tokk) · [데모](https://subniin.github.io/tokk/) · 개인, Kiro 해커톤 · 2026.11
-
-**개요.** 박수, 노크, 혀 차는 소리 같은 짧은 소리에 웹앱이 반응하게 하는 엔진입니다. 소리를 10번 녹음해 가르치면 패턴(`clap clap`)이 맞을 때 코드가 실행됩니다. 분절, 특징, kNN 분류, 패턴 매칭을 순수 TypeScript로 만들었고, 앱 3개(Shoo!, Click Talk, 슬라이드)를 올렸습니다.
-
-**AI에 맡기는 방식.** 코드는 Kiro가 썼고 저는 작업을 나눠 지시하고 결과를 확인했습니다. 작업마다 스펙 3개 문서(36개 작업), 규칙 파일(steering) 6개, 저장 시 자동 검사하는 훅 5개, MCP 서버, 권한을 좁힌 에이전트 2개, 스킬 3개가 든 파워로 구성했습니다.
-
-**진행 현황.** 앱 하나를 스펙부터 시험 통과까지 만드는 데 Kiro 실행 시간 1시간 32분~2시간 10분이 걸렸고, 엔진 연결 코드는 앱당 17~29줄입니다. 실제 노트북 마이크로 각각 10번씩 해 10/10으로 동작했습니다. 자동 시험은 합성 소리와 가짜 마이크로 했고, 데모 영상과 npm 패키지 게시는 아직입니다.
+| 프로젝트 | 내용 | 역할 | 상태 | 링크 |
+|---|---|---|---|---|
+| **다수 드론 편대 제어** | 실내에서 드론 6대가 충돌 없이 이동하는 경량 제어 (종합설계) | 시뮬레이션, 기체 시험, 알고리즘, UWB, BLE | ![진행 중](https://img.shields.io/badge/-진행_중-F59E0B?style=flat-square) | [Repo](https://github.com/Multi-Bus/capstone_design) |
+| **Come Back Home** | 허리 진동 모터 8개로 구조대원의 복귀 방향을 알려 주는 장치 | 안드로이드 앱, BLE 연결 | ![진행 중](https://img.shields.io/badge/-진행_중-F59E0B?style=flat-square) | [Repo](https://github.com/subniin/come-back-home) |
+| **Tokk** | 짧은 소리에 웹앱이 반응하는 엔진, Kiro로 개발 | 작업 지시, 결과 확인 | ![배포](https://img.shields.io/badge/-배포-2EA043?style=flat-square) | [Repo](https://github.com/subniin/tokk) · [Demo](https://subniin.github.io/tokk/) |
+| **공시 질의응답 Agent** | 공시·재무 데이터로 답하는 Agent (미래에셋 AI Festival) | 팀장, 검증기 | ![제출](https://img.shields.io/badge/-제출-2EA043?style=flat-square) | ![비공개](https://img.shields.io/badge/-비공개-6E7681?style=flat-square&logo=lock&logoColor=white) |
+| **AI 코딩 하네스** | 검사 결과로 AI 작업 완료를 판정하는 Claude Code 플러그인 | 설계, 명세, 검토 | ![v0.1.5](https://img.shields.io/badge/-v0.1.5-2EA043?style=flat-square) | ![비공개](https://img.shields.io/badge/-비공개-6E7681?style=flat-square&logo=lock&logoColor=white) |
+| **Station Cast** | 승차 데이터로 정류장 대기 인원을 추정 (오픈소스 개발자대회) | 팀장, CI | ![출품](https://img.shields.io/badge/-출품-2EA043?style=flat-square) | [Repo](https://github.com/Multi-Bus/station-cast) |
+| **Stocker** | 경제 뉴스 수집·요약·산업 테마 분류 파이프라인 | | | [Repo](https://github.com/mmm-labs-kr/stocker-news-crawling-system) |
 
 ---
 
-### 공시 질의응답 Agent (미래에셋증권 AI Festival)
+## Featured
 
-3인 팀(팀장) · 2026.08 ~ 09 · 비공개
-
-**개요.** DART 공시와 XBRL 재무 데이터로 자연어 질문에 답하는 Agent입니다. LLM이 원문에 없는 수치를 계산해 넣는 문제가 있어, 수치는 코드가 확정하고 LLM은 문장만 쓰게 나눴습니다.
-
-**맡은 일.** 팀장(파트 분담, 일정·문서 관리)과 검증기. 답변 속 연산식을 근거 수치로 재계산해 대조합니다.
-
-**결과.** 근거 없이 지어낸 답변 3.1% (구어 질문 640문항, 1회 측정), 말투를 바꾼 질문 정확도 94.6% (300문항).
-
----
-
-### AI 코딩 하네스 (Claude Code 플러그인)
-
-개인 · 2026.10 ~ 11 · 비공개
-
-**개요.** AI 코딩 에이전트가 "다 했다"고 보고해도 알 수 없던 테스트 통과 여부를 검사 결과로 판정하는 플러그인입니다. 위험 명령 차단, 편집마다 빠른 검사, 턴 종료 시 전체 검사, 읽기 전용 검증 에이전트의 수용 기준 판정으로 구성됩니다.
-
-**맡은 일.** 설계, 명세, 코드 검토, 실환경 시험. 구현은 AI 서브에이전트에 맡겼습니다.
-
-**진행 현황.** v0.1.5, 테스트 324개 통과. 한계는 README에 적었습니다. 임의 스크립트 안의 삭제는 막지 못하고, 토큰 사용량은 아직 측정하지 못했습니다.
-
----
-
-### Station Cast
-
-[Multi-Bus/station-cast](https://github.com/Multi-Bus/station-cast) · 팀 Multi-Bus · 2026 오픈소스 개발자대회 출품
-
-승차 데이터와 배차간격으로 정류장 대기 인원을 추정하는 오픈소스 서비스입니다 (FastAPI, React). 팀장으로 일정을 관리하고 CI(ruff, mypy, pytest)를 맡았습니다.
-
-### Stocker
-
-[mmm-labs-kr/stocker-news-crawling-system](https://github.com/mmm-labs-kr/stocker-news-crawling-system)
-
-국내 경제 뉴스를 수집하고 Gemini로 요약해 WICS 산업 테마를 붙이는 뉴스 파이프라인입니다 (Airflow, Supabase).
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="https://raw.githubusercontent.com/Multi-Bus/capstone_design/main/docs/images/dashboard.jpg" alt="편대 리모트 대시보드" />
+      <br><b>다수 드론 편대 제어</b>
+      <br>UWB 위치 · BLE 통신 · CBF-QP 충돌 회피
+      <br>시뮬레이션과 호버링 시험 완료, 다수 기체 비행은 진행 중
+    </td>
+    <td width="50%" valign="top">
+      <img src="images/come-back-home-app.jpg" alt="Come Back Home 앱 화면" />
+      <br><b>Come Back Home</b>
+      <br>폰 센서 → BLE → ESP32 → 허리 진동 모터 8개
+      <br>경로 기록과 복귀 진동 시험 완료, 알고리즘 수정 중
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="https://raw.githubusercontent.com/subniin/tokk/main/docs/images/click-talk.png" alt="Tokk로 만든 Click Talk" />
+      <br><b>Tokk</b>
+      <br>스펙 → Kiro 구현 → 자동 검사 → 직접 확인
+      <br>앱 3개 배포, 실마이크 10/10
+    </td>
+    <td width="50%" valign="top">
+      <b>AI 활용 방식</b>
+      <ul>
+        <li>작업 단위 스펙 36개로 나눠 Kiro에 구현</li>
+        <li>저장 시 훅 5개가 자동 검사</li>
+        <li>MCP 서버로 AI가 소리를 듣고 점수를 확인</li>
+        <li>검사 결과로 완료를 판정하는 플러그인 (하네스)</li>
+      </ul>
+    </td>
+  </tr>
+</table>
